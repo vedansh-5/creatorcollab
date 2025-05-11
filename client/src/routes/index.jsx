@@ -9,6 +9,9 @@ import UserProfile from '../pages/userprofile';
 import UserLogin from '../pages/userlogin';
 import BrandDashboard from '../pages/branddashboard';
 import Home from '../pages/home';
+import Deals from '../pages/deals';
+import Community from '../pages/community';
+import FAQ from '../pages/faq';
 
 const router = createBrowserRouter([
     {
@@ -46,6 +49,18 @@ const router = createBrowserRouter([
             {
                 path: "/users/profile",
                 element: <UserProfile />,
+            },
+            {
+                path: "/deals",
+                element: <Deals />,
+            },
+            {
+                path: "/community",
+                element: <Community />,
+            },
+            {
+                path: "/faq",
+                element: <FAQ />,
             },
         ],
     },
