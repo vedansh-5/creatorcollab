@@ -7,16 +7,18 @@ import BrandLogin from '../pages/brandlogin';
 import UserSignup from '../pages/usersignup';
 import UserProfile from '../pages/userprofile';
 import UserLogin from '../pages/userlogin';
+import BrandDashboard from '../pages/branddashboard';
+import Home from '../pages/home';
 
 const router = createBrowserRouter([
     {
         element: <Layout />,
         errorElement: <ErrorBoundary />,
         children: [
-            // {
-            //     path: "/",
-            //     element: <Home />,
-            // },
+            {
+                path: "/",
+                element: <Home/>,
+            },
             {
                 path: "/brand/signup",
                 element: <BrandSignup/>,
@@ -24,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path: "/brand/login",
                 element: <BrandLogin />,
+            },
+            {
+                path: "/brand/dashboard",
+                element: <BrandDashboard />,
             },
             {
                 path: '/brand/adddeal',

@@ -131,7 +131,7 @@ const UserSignup = () => {
                 localStorage.setItem('token', data.token);
                 
                 // Navigate to profile page
-                navigate('/user/profile', { 
+                navigate('/users/profile', { 
                     state: { 
                         isNewUser: true,
                         message: 'Account created successfully!' 
@@ -195,13 +195,19 @@ const UserSignup = () => {
                             className="w-full p-3 bg-gray-50 border rounded-lg"
                             />
                         </div>
+                        <p className="text-center text-gray-600 text-sm">
+                        Already have an account?{' '}
+                        <Link to="/users/login" className="text-rose-500 hover:text-rose-600 font-semibold">
+                          Log In
+                        </Link>
+                      </p>
                     </>
                 );
 
             case 2:
                 return (
                     <>
-                      <h2 className="text-xl font-semibold mb-4">Social Media Accounts</h2>
+                      <h2 className="text-xl font-semibold pb-4 mb-4">Social Media Accounts</h2>
                       <div className="space-y-6">
                         {/* Instagram */}
                         <div>
@@ -310,8 +316,6 @@ const UserSignup = () => {
                           </div>
                           {renderSocialStats('tiktok')}
                         </div>
-          
-                        {/* Add similar blocks for YouTube, TikTok, and Twitter */}
                       </div>
                     </>
                   );
