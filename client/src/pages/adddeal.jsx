@@ -280,7 +280,7 @@ const AddDeal = () => {
           <div className="shrink-0 p-4">
             <div className="flex items-center mb-4">
               <div className="w-6 h-6 bg-rose-300 rounded-sm mr-2" />
-              <span className="text-lg font-semibold">Influencer ready</span>
+              <span className="text-lg font-semibold">Creatorcollab</span>
             </div>
 
             {/* Progress Indicator - Reduced margin */}

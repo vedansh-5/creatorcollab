@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="bg-black text-white px-8 py-3 flex justify-between items-center">
       {/* Left: Logo */}
       <div className="text-xl font-semibold">
-        <span className="block leading-5">Influencer</span>
-        <span className="block leading-5">ready</span>
+        <span className="block leading-5">Creator</span>
+        <span className="block leading-5">collab</span>
       </div>
 
       {/* Center: Links */}
