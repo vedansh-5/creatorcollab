@@ -4,6 +4,9 @@ import AddDeal from '../pages/adddeal';
 import BrandSignup from '../pages/brandsignup';
 import ErrorBoundary from '../components/errorboundary';
 import BrandLogin from '../pages/brandlogin';
+import UserSignup from '../pages/usersignup';
+import UserProfile from '../pages/userprofile';
+import UserLogin from '../pages/userlogin';
 
 const router = createBrowserRouter([
     {
@@ -25,6 +28,18 @@ const router = createBrowserRouter([
             {
                 path: '/brand/adddeal',
                 element: <AddDeal />,
+            },
+            {
+                path: "/users/signup",
+                element: <UserSignup />,
+            },
+            {
+                path: "/users/login",
+                element: <UserLogin />,
+            },
+            {
+                path: "/users/profile",
+                element: <UserProfile />,
             },
         ],
     },
